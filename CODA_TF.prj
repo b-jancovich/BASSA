@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\z5439673\Git\CODA_TF\CODA_TF.prj" location="C:\Users\z5439673\Git\CODA_TF" name="CODA_TF" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>CODA_TF</param.appname>
+  <configuration build-checksum="190629178" file="C:\Users\z5439673\Git\CODA_TF\CODA_TF.prj" location="C:\Users\z5439673\Git\CODA_TF" name="CODA_TF" preferred-package-location="C:\Users\z5439673\Git\CODA_TF\CODA_TF\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>CODA_TF_BETA</param.appname>
     <param.icon>${PROJECT_ROOT}\CODA_TF_resources\icon.ico</param.icon>
     <param.icons>
       <file>${PROJECT_ROOT}\CODA_TF_resources\icon_48.png</file>
@@ -12,8 +12,7 @@
     <param.authnamewatermark>Ben Jancovich</param.authnamewatermark>
     <param.email>b.jancovich@unsw.edu.au</param.email>
     <param.company>Center for Marine Science and Innovation</param.company>
-    <param.summary>CODA TF
-Time-Frequency Analysis for Bioacoustics</param.summary>
+    <param.summary>Time-Frequency Analysis for Bioacoustics</param.summary>
     <param.description>School of Biological, Earth &amp; Environmental Sciences
 University of New South Wales
 
@@ -32,7 +31,7 @@ INSTALLATION:
 - NOTE: The MATLAB Runtime installer requires approximately 2 GB of disk space.</param.description>
     <param.screenshot>C:\Users\z5439673\OneDrive - UNSW\Pictures\CODA_TF SplashScreen.png</param.screenshot>
     <param.guid />
-    <param.installpath.string>\Center for Marine Science and Innovation\CODA_TF\</param.installpath.string>
+    <param.installpath.string>\Center for Marine Science and Innovation\CODA_TF_BETA\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo>C:\Users\z5439673\OneDrive - UNSW\Pictures\CODA_TF SplashScreen.png</param.logo>
     <param.install.notes />
@@ -62,24 +61,7 @@ INSTALLATION:
 	 
  Input Arguments 
 	 -?  print help on how to use the application 
-	 input arguments 
- Description 
- 	 School of Biological, Earth &amp; Environmental Sciences
-University of New South Wales
-
-CODA TF is a tool for time-frequency analysis of audio signals, designed for the analysis of complex, low frequency bio acoustic signals. 
-
-It is built on the Fractional Adaptive Superresolution Wavelet Transform originally developed by Moca et al. (2021), released under MIT licence at https://github.com/TransylvanianInstituteOfNeuroscience/Superlets
-
-SYSTEM REQUIREMENTS:
-- Windows 10 or later (64-bit)
-- MATLAB Runtime (Installed automatically if not already present)
-
-INSTALLATION:
-- Double Click the file "SLT_Demo_Tool_WebInstaller.exe".
-- The installer will search your system for an installation of MATLAB Runtime.
-- If it is not present, it will download and install it automatically. 
-- NOTE: The MATLAB Runtime installer requires approximately 2 GB of disk space.</param.help.text>
+	 input arguments</param.help.text>
     <unset>
       <param.version />
       <param.guid />
@@ -118,8 +100,8 @@ INSTALLATION:
     </fileset.depfun>
     <build-deliverables>
       <file location="${PROJECT_ROOT}\CODA_TF\for_testing" name="readme.txt" optional="true">C:\Users\z5439673\Git\CODA_TF\CODA_TF\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\CODA_TF\for_testing" name="CODA_TF.exe" optional="false">C:\Users\z5439673\Git\CODA_TF\CODA_TF\for_testing\CODA_TF.exe</file>
       <file location="${PROJECT_ROOT}\CODA_TF\for_testing" name="splash.png" optional="false">C:\Users\z5439673\Git\CODA_TF\CODA_TF\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\CODA_TF\for_testing" name="CODA_TF_BETA.exe" optional="false">C:\Users\z5439673\Git\CODA_TF\CODA_TF\for_testing\CODA_TF_BETA.exe</file>
     </build-deliverables>
     <workflow />
     <matlab>
