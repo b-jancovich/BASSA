@@ -1,0 +1,26 @@
+Warning: Integer operands are required for colon operator when used as index.
+Error using CODA_TF/playaudio
+Device Error: Unanticipated host error
+
+
+Error in CODA_TF/PlayButtonValueChanged (line 1278)
+
+Error in appdesigner.internal.service.AppManagementService/executeCallback (line 171)
+
+Error in matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event) (line 62)
+
+Error using matlab.ui.control.internal.controller.ComponentController/executeUserCallback
+Error while evaluating StateButton PrivateValueChangedFcn.
+
+Error using exportgraphics
+The value of 'destination' is invalid. Unable to create output file ' \Superlet_Scalogram_AustPygBlue_Manue_IMOS_1_47CDE270_20080305_000000_500Hz.jpg', Permission denied.
+
+Error in CODA_TF/SLT_ExportPlotButtonPushed (line 1255)
+
+Error in appdesigner.internal.service.AppManagementService/executeCallback (line 171)
+
+Error in matlab.apps.AppBase>@(source,event)executeCallback(ams,app,callback,requiresEventData,event) (line 62)
+
+Error using matlab.ui.control.internal.controller.ComponentController/executeUserCallback
+Error while evaluating Button PrivateButtonPushedFcn.
+

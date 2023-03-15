@@ -1,4 +1,4 @@
-CODA_TF_BETA Executable
+CODA_TF Executable
 
 1. Prerequisites for Deployment 
 
@@ -24,7 +24,7 @@ in the MathWorks Documentation Center.
 
 Files to Package for Standalone 
 ================================
--CODA_TF_BETA.exe
+-CODA_TF.exe
 -MCRInstaller.exe 
     Note: if end users are unable to download the MATLAB Runtime using the
     instructions in the previous section, include it when building your 
