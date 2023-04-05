@@ -70,14 +70,12 @@ mem_bytes_totaldata = mem_bytes_result + mem_bytes_wavelets + mem_bytes_wrkng;
 if nargin > 7
     wtresult = wtresult(:, 1:ceil(varargin{1}));
 else
-    % wtresult = wtresult;
+    wtresult = wtresult;
 end
 
 % Get result array dimensions
 m = size(wtresult, 1);
 n = size(wtresult, 2);
-
-clearvars wtresult
 
 % Calculate the total number of quads in the surface
 NumQuads = (m-1)*(n-1);
