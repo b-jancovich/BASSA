@@ -68,14 +68,16 @@ mem_bytes_totaldata = mem_bytes_result + mem_bytes_wavelets + mem_bytes_wrkng;
 
 % If time down-sampling is on, & SLT_ncolumns_reduced has been passed in,
 if nargin > 7
-    wtresult = wtresult(:, 1:ceil(varargin{1}));
+    Nsamps = varargin{1};
 else
-    wtresult = wtresult;
+    % Nsamps = Nsamps;
 end
 
 % Get result array dimensions
 m = size(wtresult, 1);
 n = size(wtresult, 2);
+
+clearvars wtresult
 
 % Calculate the total number of quads in the surface
 NumQuads = (m-1)*(n-1);
@@ -123,8 +125,7 @@ elseif mem_bytes_grandtotal >= 1e+12 && mem_bytes_grandtotal < 1e+15
     units = 'TBytes';
 end
 
-% computes the complex Morlet wavelet for the desired center frequency Fc
-% with Nc cycles, with a sampling frequency Fs.
+% computes a fake wavelet
 function w = buildfakewavelets(Fc, Nc, Fs)
 if (Fc == 0)
     w = [];
