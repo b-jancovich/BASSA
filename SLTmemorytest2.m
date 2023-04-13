@@ -30,14 +30,17 @@ end
 
 % Estimate memory of convolution operations
 mem_bytes_conv = 0;
+Ntotalwavelets = 0;
+
 for i_freq = 1 : numel(F)
     % get the number of integer wavelets
-    Nwavelets = floor(order_frac(i_freq));
+    Nwavelets = floor(order_frac(i_freq)); 
     % Do the convolution mem estimate
     for i_ord = 1 : Nwavelets      
         mem_bytes_conv_single = estimate_conv_memory(Nsamps, wavelet_lengths{i_freq, i_ord});
     end
-    mem_bytes_conv = mem_bytes_conv + mem_bytes_conv_single;
+    Ntotalwavelets = Ntotalwavelets + Nwavelets; 
+    mem_bytes_conv = mem_bytes_conv + mem_bytes_conv_single; 
 end
 
 % Compute the total number of elements comprising all the wavelets & 
@@ -46,12 +49,18 @@ mem_bytes_wavelets = sum([wavelet_lengths{:,:}], 'all') * 8;
 
 % compute the size of the conv results before Geometric Mean
 result_elems = Nf * Nsamps;
-mem_bytes_result = result_elems * Nwavelets * 8;
+% mem_bytes_result = result_elems * Nwavelets * 8; 
+mem_bytes_result = result_elems * max(order_frac) * 8; 
 
 % Working memory estimate (factoring in FFT of input, multiplication with 
 % each wavelets, for each frequency:
 mem_bytes_input = Nsamps * 8;
-mem_bytes_wrkng = mem_bytes_input * Nwavelets * Nf * 1.5;
+
+% The denominator "fudge" was empirically derived by testing for 
+% memory overload crashes with longer and longer signals. It results in memory estimate 
+% of 99% for a signal with 60s duration and 1000Hz Fs, with default SLT settings. 
+fudge = 2.1; 
+mem_bytes_wrkng = (mem_bytes_input * Ntotalwavelets * log(Fs)) / fudge;
 
 %% Estimate Rendering Memory
 
