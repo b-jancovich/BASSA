@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\z5439673\Git\CODA_TF\BASSA.prj" location="C:\Users\z5439673\Git\CODA_TF" name="BASSA" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="C:\Users\z5439673\Git\BASSA\BASSA.prj" location="C:\Users\z5439673\Git\BASSA" name="BASSA" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>BASSA</param.appname>
     <param.icon>${PROJECT_ROOT}\BASSA_resources\icon.ico</param.icon>
     <param.icons>
@@ -13,9 +13,7 @@
     <param.email>b.jancovich@unsw.edu.au</param.email>
     <param.company>MammalLab</param.company>
     <param.summary>BASSA (BioAcoustics Superlet Scalogram Analyser) V1.0 for Windows x64</param.summary>
-    <param.description>BASSA is a time-frequency analyser for low frequency animal sounds. It uses the Fractional Adaptive Superresolution Wavelet Transform method, also known as the Superlet method. 
-
-BASSA was designed at the MammalLab, in the Center for Marine Science and Innovation, at the School of Biological, Earth and Environmental Sciences, University of New South Wales.</param.description>
+    <param.description>BASSA is a time-frequency analyser for low frequency animal sounds. It was designed at the MammalLab, in the Center for Marine Science and Innovation, at the School of Biological, Earth and Environmental Sciences, University of New South Wales.</param.description>
     <param.screenshot>C:\Users\z5439673\OneDrive - UNSW\Documents\7. Manuscripts\A New Software Tool for Visualising Animal Sounds\Figures\BASSA SplashScreen.png</param.screenshot>
     <param.guid />
     <param.installpath.string>\MammalLab\BASSA\</param.installpath.string>
@@ -98,9 +96,9 @@ BASSA was designed at the MammalLab, in the Center for Marine Science and Innova
       <file>C:\Users\z5439673\Git\Utilities\easySRC.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\BASSA\for_testing" name="BASSA.exe" optional="false">C:\Users\z5439673\Git\CODA_TF\BASSA\for_testing\BASSA.exe</file>
-      <file location="${PROJECT_ROOT}\BASSA\for_testing" name="splash.png" optional="false">C:\Users\z5439673\Git\CODA_TF\BASSA\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\BASSA\for_testing" name="readme.txt" optional="true">C:\Users\z5439673\Git\CODA_TF\BASSA\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\BASSA\for_testing" name="splash.png" optional="false">C:\Users\z5439673\Git\BASSA\BASSA\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\BASSA\for_testing" name="BASSA.exe" optional="false">C:\Users\z5439673\Git\BASSA\BASSA\for_testing\BASSA.exe</file>
+      <file location="${PROJECT_ROOT}\BASSA\for_testing" name="readme.txt" optional="true">C:\Users\z5439673\Git\BASSA\BASSA\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
