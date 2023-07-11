@@ -2,7 +2,7 @@
 BASSA is a GUI-based software tool for time-frequency analysis of low frequency animal vocalisations.
 
 To install BASSA: 
-- Either sync this repository to your local Git folder, or click the green "Code" button and then click "Download Zip".
+- Either sync this repository to your local Git folder, or click the green "Code" button and then in the "Local" tab, click "Download Zip".
 - In the BASSA repository is the file "BASSA User Guide Beta V1.0.pdf". Open this and review system requirements and installation information. 
 - Open the folder "BASSA Installation", and run "BASSA_installer_web.exe".
 
