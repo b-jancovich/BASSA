@@ -20,3 +20,10 @@ To submit source code changes to BASSA:
 - Once reviewed, your repository will be added as a new remote repository, your changes will be fetched and your development branch will be merged back into the master branch. 
 
 Contact the developer: b.jancovich@unsw.edu.au
+
+Bassa was developed as part of the following study:
+
+Jancovich, B.A., Rogers, T.L., BASSA: New software tool reveals hidden details in visualisation of low‐frequency animal sounds (2024)
+<br>Centre for Marine Science and Innovation
+<br>School of Biological, Earth and Environmental Sciences
+<br>University of New South Wales, Sydney, Australia
