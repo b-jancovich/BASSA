@@ -11,7 +11,7 @@ Some users have reported an error relating to a missing MEX file when launching 
 To resolve this issue, an installer-less version of the software has been uploaded as a release (v1.0-alpha).
 It is available here: https://github.com/b-jancovich/BASSA/releases/tag/v1.0-alpha
 
-## How To Contribute To Bassa
+## How To Contribute To BASSA
 
 To submit source code changes to BASSA:
 - Sync the BASSA repo
