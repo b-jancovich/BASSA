@@ -6,6 +6,13 @@ To install BASSA:
 - In the BASSA repository is the file "BASSA User Guide Beta V1.0.pdf". Open this and review system requirements and installation information. 
 - Open the folder "BASSA Installation", and run "BASSA_installer_web.exe".
 
+## Installation Update (2025-02-04)
+Some users have reported an error relating to a missing MEX file when launching BASSA. 
+To resolve this issue, an installer-less version of the software has been uploaded as a release (v1.0-alpha).
+It is available here: https://github.com/b-jancovich/BASSA/releases/tag/v1.0-alpha
+
+## How To Contribute To Bassa
+
 To submit source code changes to BASSA:
 - Sync the BASSA repo
 - The majority of BASSA's source code is contained within the file "BASSA.mlapp", which must be opened and edited with the MATLAB App Designer.
@@ -21,9 +28,16 @@ To submit source code changes to BASSA:
 
 Contact the developer: b.jancovich@unsw.edu.au
 
-Bassa was developed as part of the following study:
+## How to Cite BASSA
+BASSA is released under the MIT licence. This is a permissive licence that allows re-use. 
+The conditions of re-use are:
+1) Any work based on, or incorporating code from this repo must be released under the same MIT licence.
+2) Any work that utilises BASSA or any of its underlying code, must include the following citation:
+ 
+Jancovich, B. A., & Rogers, T. L. (2024). BASSA: New software tool reveals hidden details in visualisation of low-frequency animal sounds. 
+Ecology and Evolution, 14, e11636. https://doi.org/10.1002/ece3.11636 
 
-Jancovich, B.A., Rogers, T.L., BASSA: New software tool reveals hidden details in visualisation of low‐frequency animal sounds (2024)
-<br>Centre for Marine Science and Innovation
+BASSA was developed at the MammalLab
+<br> Centre for Marine Science and Innovation
 <br>School of Biological, Earth and Environmental Sciences
 <br>University of New South Wales, Sydney, Australia
